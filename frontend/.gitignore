@@ -1,13 +1,11 @@
 # Dependencies
-node_modules/
+node_modules
 .pnp
 .pnp.js
 
 # Build outputs
-dist/
-dist-ssr/
-target/
-build/
+dist
+dist-ssr
 *.local
 
 # Environment & Secrets
@@ -15,17 +13,16 @@ build/
 .env.*
 !.env.example
 
-# Database files
+# SQLite Database files
 *.db
 *.db-journal
 *.sqlite
 *.sqlite-journal
-data/
-*.mv.db
-*.trace.db
+prisma/*.db
+prisma/*.db-journal
 
 # Logs
-logs/
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -36,22 +33,11 @@ lerna-debug.log*
 # Editor & OS files
 .vscode/*
 !.vscode/extensions.json
-.idea/
+.idea
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-*.iml
-*.iws
-*.ipr
 
-# Eclipse / STS
-.classpath
-.project
-.settings/
-.apt_generated/
-.factorypath/
-.springBeans
-.sts4-cache
